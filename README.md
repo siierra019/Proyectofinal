@@ -5,12 +5,9 @@ Proyecto final conjunto
 
 Proyecto 
 Nombre del proyecto : Agencias ASI. 
-
 Componentes : Alejandro Asu , Ivan Ballestín , Alvaro Sierra. 
-
 Breve descripción del proyecto: 
 Nuestra idea es realizar una agencia de viajes que gestione los viajes de manera que puedas elegir si seleccionar paquetes (vuelo, hotel, guías…), seleccionar tú cada cosa individualmente…También te avisará de posibles ofertas de vuelo en caso de ya haber volado con nuestra agencia, por si te pueden llegar a interesar. 
-
 Almacenes (tablas, ficheros…) y atributos de cada almacén: 
 Clientes(DNI, nombre, dirección, CP, teléfono, mail, contraseña) Compañías (Nombre, teléfono, calidad, vuelos) 
 Vuelos(número de vuelo, clase, salida, fecha salida, destino, fecha de llegada) Hoteles (Nombre, calidad, teléfono, web, dirección)
@@ -31,12 +28,18 @@ Diagrama de pantallas:
 
 3.Hoteles: Aquí aparecerán todos los hoteles que tenemos disponibles desde el más caro al más barato .
 
-4.Guías
+4.Guías: Aqui apareceran todos los guias disponibles para explorar el lugar más fondo
 
 5. Alquiler de vehículos (direcciona a una página de alquiler, tipo northgate)
 
-7.Paquetes
-8.1 Escapadas (Subtipo de paquete)
-9.2 Aventuras
-10. Perfil
-11. Pagos
+6.Paquetes: Aquí encontrarás paquetes de viaje para que no tengas que 
+preocuparte de nada y además es más barato.
+
+6.1 Escapadas (Subtipo de paquete)
+
+6.2 Aventuras (Subtipo de paquete)
+
+7. Perfil: Esta será la página donde  verás todos los datos que has metido ,tienes la posibilidad de modificar los datos como correo , dirección.
+
+8. Pagos: Es la última página donde terminarás la compra . 
+
