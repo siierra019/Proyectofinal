@@ -29,9 +29,9 @@ Diagrama de pantallas:
 
 1.Login: Aquí podrás iniciar sesión si ya tienes cuenta.
 
-1.1 Registrarse:En esta página necesitas meter el correo electrónico para crearte una cuenta en nuestra página web. 
+  1.1 Registrarse:En esta página necesitas meter el correo electrónico para crearte una cuenta en nuestra página web. 
 
-1.2 Recuperar contraseña: Página única y exclusiva para recuperar la contraseña mediante un correo electrónico.
+  1.2 Recuperar contraseña: Página única y exclusiva para recuperar la contraseña mediante un correo electrónico.
 
 2.Viajes: Esta será la página donde encontraras toda la disponibilidad de viajes y vuelos de nuestras agencia.
 
@@ -44,9 +44,9 @@ Diagrama de pantallas:
 6.Paquetes: Aquí encontrarás paquetes de viaje para que no tengas que 
 preocuparte de nada y además es más barato.
 
-6.1 Escapadas (Subtipo de paquete)
+  6.1 Escapadas (Subtipo de paquete)
 
-6.2 Aventuras (Subtipo de paquete)
+  6.2 Aventuras (Subtipo de paquete)
 
 7. Perfil: Esta será la página donde  verás todos los datos que has metido ,tienes la posibilidad de modificar los datos como correo , dirección.
 
