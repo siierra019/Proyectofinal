@@ -1,34 +1,35 @@
 <!DOCTYPE html>
-<html lang="es" dir="ltr">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link href="css/login.css" rel="stylesheet" />
-    <title>AGENCIAS ASI</title>
+    <link href="css/registro.css" rel="stylesheet" />
+    <title></title>
   </head>
   <body>
-
     <div class="container">
       <div class="backbox">
         <div class="loginMsg">
           <div class="textcontent">
-            <p class="title">¿No tienes cuenta?</p>
-            <p>Registrate para poder viajar con Agencias ASI</p>
-      <a href="registro.html"> <button id="switch1">Registrate</button></a>
+            <p class="title">Ya tienes cuenta?</p>
+            <p>Inicia sesión en nuestra web</p>
+      <a href="login.html"> <button id="switch1">Iniciar sesión</button></a>
           </div>
         </div>
+
         <form class="was-validated" action="principal.html">
       <div class="frontbox">
         <div class="login">
-          <h2>Inicio de sesión</h2>
+          <h2>Registro en Agencias ASI</h2>
           <div class="inputbox">
+            <input type="text" name="nombre" placeholder="  NOMBRE COMPLETO" required pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s+]{2,50}">
             <input type="text" name="email" placeholder="  EMAIL" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
             <input type="password" name="password" placeholder="  PASSWORD">
           </div>
-          <p>¿Has olvidado tu contraseña?</p>
-           <p class="link"><a href="recu.html">Recuperala</a></p>
-          <button>Iniciar</button>
+          <button type="submit">Iniciar</button>
         </div>
-        </form>
 
-  </body>
-</html>
+        </div>
+
+        </form>
+       </body>
+       </html>
