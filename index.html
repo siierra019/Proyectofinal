@@ -58,17 +58,17 @@ div {
   position: fixed;
 }
 
-#marco {
 
+#marco {
         border:none;
         padding: 1rem;
  top: 25%;
  left: 25%;
  border-radius: 30px;
  background-color: white;
- width:800px;
- height: 600px;
  position: absolute;
+ height:600px;
+ width: 600px;
  top:50%;
  left:50%;
  transform: translate(-50%, -50%);
@@ -81,6 +81,18 @@ div {
     position: absolute;
   }
 
+  /*#h5 {
+    color: #CB1F1F;
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+  }
+*/
   </style>
 
 </head>
@@ -118,11 +130,71 @@ div {
             </div><!--fin div off-canvas-->
 
 
-                       <iframe src="vuelos.html"  id="marco" name="destino" scrolling="no" frameborder="0"></iframe>
+
+
+
 
 
         <!--parte derecha-->
+        <div class="col-9" id="marco" >
+          <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
+            <div class="carousel-indicators">
+
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="2" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="3" class="active"></button>
+
+            </div>
+
+            <div class="carousel-inner">
+
+
+                           <div class="carousel-item active mt-primary">
+                            <img src="avion.png" alt="" class="d-block w-100" height="565px" width="560px">
+                            <div class="carousel-caption d-none d-md-block" id="h5">
+                            <h6>VUELOS</h6>
+
+                            </div>
+                           </div>
+                           <div class="carousel-item">
+                            <img src="hotel.png" alt="" class="d-block w-100" height="560px" width="550px">
+                            /*<div class="carousel-caption d-none d-md-block" id="h5">
+                            <h5>HOTELES</h5>
+                          </div>*/
+                           </div>
+                           <div class="carousel-item">
+                            <img src="guia.png" alt="" class="d-block w-100" height="560px" width="550px">
+                            <div class="carousel-caption d-none d-md-block" id="h5">
+                            <h5>GUÍAS</h5>
+
+                            </div>
+                           </div>
+                           <div class="carousel-item">
+                            <img src="paquetes.png" alt="" class="d-block w-100" height="565px" width="500px">
+                            <div class="carousel-caption d-none d-md-block" id="h5">
+                            <h5>PAQUETES</h5>
+
+                            </div>
+                           </div>
+
+
+                       </div><!--fin div carousel-inner-->
+
+
+
+                       <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                           <span class="carousel-control-prev-icon"></span>
+                       </button>
+                       <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                           <span class="carousel-control-next-icon"></span>
+                       </button>
+
+
+
+                     </div><!--fin demo-->
+                 </div> <!--fin div col-9-->
 
 
 
