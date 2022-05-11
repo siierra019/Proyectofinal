@@ -8,73 +8,91 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
   <style>
 
-html{
-  background-image:url("https://images.alphacoders.com/102/1020613.jpg");
- background-attachment: fixed;
-background-position: center center;
-background-size: cover;
-}
-
-    body{
-      font-family: 'Roboto', sans-serif;
-      background-image:url("https://images.alphacoders.com/102/1020613.jpg");
-     background-attachment: fixed;
-    background-position: center center;
-    background-size: cover;
-    }
-div {
-  background-color: #CB1F1F;
-}
-.footer,.generic-footer{
-  margin-bottom:98px
+  html{
+    background-image:url("https://images.alphacoders.com/102/1020613.jpg");
+   background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
   }
-  @media (min-width:374px){.footer,.generic-footer{margin-bottom:78px}}
-  @media (min-width:546px){.footer,.generic-footer{margin-bottom:56px}}
-  @media (min-width:1055px){.footer,.generic-footer{margin-bottom:0}}
-  .disclaimer{
-    position:fixed;
-    z-index:9999999;
-    bottom:0;
-    right:0;
-    border-top:2px solid #ff5c62;
-    text-align:center;
-    font-size:14px;
-    font-weight:400;
-    background-color:#fff;
-    padding:5px 10px 5px 10px
-  }
-    .disclaimer a:hover{
-      text-decoration:underline
-    }
-      @media (min-width:1052px){.disclaimer{text-align:right;border-left:2px solid red;border-top-left-radius:10px}}
-      @media (min-width:1920px){.disclaimer{width:60%}}
 
-#botonperfil{
-  background-color: #CB1F1F;
-  border: 2px solid white;
-  border-radius: 10px;
-  margin-left: 10px;
-  margin-top: 8px;
-  position: fixed;
-}
-
-#marco {
-        height: 700px;
-        width:700px;
-        border:none;
-        padding: 1rem;
-        position: absolute;
- top: 25%;
- left: 25%;
- border-radius: 30px;
- background-color: white;
-
+      body{
+        font-family: 'Roboto', sans-serif;
+        background-image:url("https://images.alphacoders.com/102/1020613.jpg");
+       background-attachment: fixed;
+      background-position: center center;
+      background-size: cover;
       }
+  div {
+    background-color: #CB1F1F;
+  }
+  .footer,.generic-footer{
+    margin-bottom:98px
+    }
+    @media (min-width:374px){.footer,.generic-footer{margin-bottom:78px}}
+    @media (min-width:546px){.footer,.generic-footer{margin-bottom:56px}}
+    @media (min-width:1055px){.footer,.generic-footer{margin-bottom:0}}
+    .disclaimer{
+      position:fixed;
+      z-index:9999999;
+      bottom:0;
+      right:0;
+      border-top:2px solid #ff5c62;
+      text-align:center;
+      font-size:14px;
+      font-weight:400;
+      background-color:#fff;
+      padding:5px 10px 5px 10px
+    }
+      .disclaimer a:hover{
+        text-decoration:underline
+      }
+        @media (min-width:1052px){.disclaimer{text-align:right;border-left:2px solid red;border-top-left-radius:10px}}
+        @media (min-width:1920px){.disclaimer{width:60%}}
 
-  #encabezado {
+  #botonperfil{
+    background-color: #CB1F1F;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 8px;
     position: fixed;
   }
 
+
+  #marco {
+          border:none;
+          padding: 1rem;
+   top: 25%;
+   left: 25%;
+   border-radius: 30px;
+   background-color: white;
+   position: absolute;
+   height:600px;
+   width: 600px;
+   top:50%;
+   left:50%;
+   transform: translate(-50%, -50%);
+   display: inline-flex;
+  }
+
+        }
+
+    #encabezado {
+      position: absolute;
+    }
+
+    /*#h5 {
+      color: #CB1F1F;
+      background-color: white;
+      margin-top: 5px;
+      margin-bottom: 40px;
+      margin-right: 0px;
+      margin-left: 0px;
+      padding-bottom: 5px;
+      padding-top: 5px;
+
+    }
+  */
   </style>
 
 </head>
@@ -109,14 +127,73 @@ div {
                   <br>
                   <a href="login.html" class="link-dark rounded">Historial de vuelos</a>
                   <br>
-                  <a href="login.html" class="link-dark rounded">Cerrar Sesion</a>
+                  <a href="index.html" class="link-dark rounded">Cerrar Sesion</a>
 
 
 
             </div><!--fin div off-canvas-->
 
 
-                       <iframe src="vuelos.html"  id="marco" name="destino" scrolling="no" frameborder="0"></iframe>
+            <!--parte derecha-->
+            <div class="col-9" id="marco" >
+              <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="1" class="active"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="2" class="active"></button>
+                  <button type="button" data-bs-target="#demo" data-bs-slide-to="3" class="active"></button>
+
+                </div>
+
+                <div class="carousel-inner">
+
+
+                               <div class="carousel-item active mt-primary">
+                                <a href="vuelos.html">  <img src="avion.png" alt="" class="d-block w-100" height="565px" width="560px"></a>
+                                <div class="carousel-caption d-none d-md-block" id="h5">
+                                <h6>VUELOS</h6>
+
+                                </div>
+                               </div>
+                              <div class="carousel-item">
+                                <a href="hoteles.html">  <img src="hotel.png" alt="" class="d-block w-100" height="560px" width="550px"></a>
+                                <div class="carousel-caption d-none d-md-block" id="h5">
+                                <h6>HOTELES</h6>
+                              </div>
+                            </div>
+                               <div class="carousel-item">
+                              <a href="guias.html"> <img src="guia.png" alt="" class="d-block w-100" height="560px" width="550px"></a>
+                                <div class="carousel-caption d-none d-md-block" style=" margin-bottom: 0px;">
+                                <h6>GUÍAS</h6>
+
+                                </div>
+                               </div>
+                               <div class="carousel-item">
+                              <a href="paquetes.htmledga">    <img src="paquetes.png" alt="" class="d-block w-100" height="565px" width="500px"></a>
+                                <div class="carousel-caption d-none d-md-block" id="h5">
+                                <h6>PAQUETES</h6>
+
+                                </div>
+                               </div>
+
+
+                           </div><!--fin div carousel-inner-->
+
+
+
+                           <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                               <span class="carousel-control-prev-icon"></span>
+                           </button>
+                           <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                               <span class="carousel-control-next-icon"></span>
+                           </button>
+
+
+
+                         </div><!--fin demo-->
+                     </div> <!--fin div col-9-->
 
 
         <!--parte derecha-->
